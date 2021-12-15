@@ -1,0 +1,615 @@
+/* common styling */
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Merriweather', serif;
+    color: #8a2828;
+}
+
+section{
+    height: 100%;
+}
+/* end of common styling  */
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* section-1  */
+
+.section-1{
+    width: 100%;
+    background-color: #fdf2f1;
+}
+
+.header , .sub-title{
+    display: flex;
+    align-items: center;
+}
+
+.header{
+    justify-content: center;
+    height: 20rem;
+    width: 100%;
+    flex-basis: 48%;
+    gap: 4%;
+    box-shadow:0px 0.2rem 0.5rem rgb(241 7 7 / 29%);
+}
+
+.logo-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-title{
+    justify-content: space-evenly;
+}
+
+.sub-title span{
+    padding: .5rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.logo-section i{
+    font-size: 5rem;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1) rotate(-45deg);
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.title{
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: .3rem dotted #8a2828;
+}
+
+.title a{
+    text-decoration: none;
+    color: #8a2828;
+}
+
+.line{
+    width: .3rem;
+    height: 18rem;
+    background-color: #8a2828;
+}
+
+.heading-section{
+    padding-top: 1rem;
+    width: 40%;
+    font-size: 3.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.section-1-img img{
+    width: 100%;
+    height: 85vh;
+    object-fit: fill;
+}
+
+/* end of section-1  */
+
+
+/* section-2  */
+
+.product-info{
+    color: #000;
+    margin: 0 auto;
+    width: 35%;
+    padding: 1.5rem;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    text-align: center;
+}
+
+.section-2-heading{
+    font-size: 2.5rem;
+    letter-spacing: .6rem;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.formula{
+    width: 80%;
+    margin: 1.5rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.formula-img{
+    margin-top: 3rem;
+    width: 32rem;
+}
+
+.javitri , .jojoba{
+    position: absolute;
+    right: 20%;
+}
+
+.jojoba{
+    right: 20%;
+    bottom: 30%;
+}
+
+.rice{
+   margin-right: 8rem;
+}
+
+.javitri-title , 
+.jojoba-title , 
+.rice-title{
+    font-size: 2rem;
+    position: relative;
+}
+
+.rice-title{
+    margin-left: 24rem;
+}
+
+.javitri-title::before , 
+.jojoba-title::before , 
+.rice-title::before{
+    content: "";
+    position: absolute;
+    width: 28%;
+    height: 2px;
+    background-color: #8a2828;
+    margin-top: 2rem;
+    top: 110%;
+    right: 73%;
+    transform: rotate(90deg);
+}
+
+.jojoba-title::before{
+    width: 25%;
+    right: 76%;
+}
+
+.rice-title::before{
+    width: 19%;
+    right: 76%;
+}
+
+.content div,
+.rice-content div{
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.content div{
+    /* font-size: 1.5rem;
+    position: relative; */
+    margin-left: 4rem;
+}
+
+.rice-content div{
+    /* font-size: 1.5rem;
+    position: relative; */
+    margin-right: 30rem;
+}
+
+
+.content div::before,
+.rice-content div::before{
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 2px;
+    background-color: #8a2828;
+    left: -10%;
+    top: 46%;
+}
+
+.rice-content div::before{
+    right: -11%;
+    left: auto;
+}
+
+
+
+
+/* end of section-2  */
+
+
+/* SECTION-3  */
+
+.section-3{
+    background-color: #fde9e9;
+}
+
+.section-3-heading{
+    width: 35%;
+    text-align: center;
+    margin: 2rem auto;
+    padding: 3rem;
+    font-size: 2.5rem;
+    letter-spacing: .6rem;
+}
+
+.skin-img{
+    margin: 0 auto;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-type{
+    position: relative;
+    width: 100%;
+    height: 25rem;
+}
+
+.img-type img{
+   width: 25rem;
+   height: 22rem;
+}
+
+.img-type p{
+    margin-left: 8rem;
+    font-size: 2.3rem;
+    font-style: italic;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    color: #000;
+}
+
+.img-type:nth-child(2){
+    margin-left: 38rem;
+    margin-top: -16rem;
+}
+
+.img-type:nth-child(2) p{
+    margin-bottom: 0;
+    margin-left: 10rem;
+}
+
+.img-type:nth-child(3) p{
+    margin-left: 26rem;
+    margin-top: -10rem;
+}
+/* END OF SECTION-3  */
+
+/* section-4  */
+
+.section-4{
+    margin-top: 4rem;
+}
+
+.shade-types span{
+    padding: 1rem;
+    margin: 1rem 6rem;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: .3rem;
+}
+
+.shade-types{
+    width: 100%;
+    height: 4rem;
+    text-align: end;
+}
+
+.skin-shades , .shade-color-parameter div{
+    display: flex;
+}
+
+.skin-shades{
+    /* display: flex; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.skin-shades img{
+    width: 100%;
+}
+
+.shade-color-parameter{
+    width: 94%;
+    margin-left: 5rem;
+}
+
+.shade-color-parameter div{
+    justify-content: space-between;
+    width: 100%;
+    height: 3rem;
+    background: linear-gradient(to right, #f3f3f3 0%, #ffcccc 100%);
+}
+
+.shade-color-parameter div span{
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    color: #8a2828;
+    background-color: #f1f1f1;
+    width: 20rem;
+}
+
+.shade-color-parameter .skin-tones {
+      background-color: transparent;
+      width: 100%;
+}
+
+.banner-2{
+    width: 100%;
+}
+
+/* end of section-4  */
+
+
+/* section-5  */
+
+.section-5-heading{
+    text-align: center;
+    font-size: 5rem;
+    letter-spacing: .3rem;
+    font-weight: 100;
+}
+
+figure {
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+  }
+  figcaption {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  figure {
+    margin: 0;
+    padding: 0;
+  }
+  /* caption styling  */
+  figcaption {
+    background-color: #d40d0d;
+    color: white;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  img {
+    width: 100%;
+  }
+  
+  @media (min-width: 600px) {
+    .row {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+    figure {
+      flex-basis: 48%;
+    }
+  }
+  
+
+  .available-shades{
+      width: 65%;
+      margin: 3rem auto;
+  }
+
+.avail-heading{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 100;
+    letter-spacing: .5rem;
+}
+
+.seven-shade{
+    filter: saturate(1.5);
+}
+
+/*end of section-5  */
+
+
+/* footer  */
+
+footer{
+    background-color: #fde9e9;
+    padding: 2rem 0;
+}
+
+.footer-text{
+    margin: 1rem auto;
+    padding: 2rem;
+    width: 30%;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: .3rem;
+    color: #000;
+    line-height: 4rem;
+}
+
+.footer-links{
+    margin: 0 auto;
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-links li{
+    padding: .8rem;
+    list-style: none;
+    border-radius: .5rem;
+    transition: all .5s ease;
+}
+
+.footer-links a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: #8a2828;
+    font-weight: bold;
+    letter-spacing: .2rem;
+    font-style: italic;
+    transition: all .3s ease;
+}
+
+.footer-links li:hover{
+   transform: rotate(20deg);
+   box-shadow: .2rem .2rem .5rem rgba(0, 0, 0, 0.349);
+}
+
+.footer-links a:hover{
+    font-size: 2.2rem;
+}
+
+/* end of footer  */
+
+
+/* responsive design  */
+
+@media (max-width : 900px){
+    .product-info , .section-3-heading{
+        width: 55%;
+        font-size: 1.5rem;
+    }
+
+    .section-2-heading{
+        font-size: 1.8rem;
+    }
+    .section-3-heading{
+        margin:1rem auto ;
+    }
+    .img-type{
+        width: 25rem;
+        height: 23rem;
+    }
+    .img-type img{
+        width: 21rem;
+        height: 19rem;
+    }
+    .shade-types span{
+        margin: 1rem 3rem;
+        font-size: 1.5rem;
+    }
+    .shade-color-parameter{
+        width: 90%;
+    }
+    .avail-heading{
+        font-size: 2rem;
+    }
+    .section-5-heading{
+        font-size: 3rem;
+    }
+    .footer-text{
+        font-size: 1.6rem;
+        width: 85%;
+        letter-spacing: .2rem;
+    }
+    .footer-links{
+        width: 70%;
+    }
+    .footer-links a{
+        font-size: 1.5rem;
+    }
+    .formula{
+        width: 98%;
+    }
+    .javitri{
+        right: 15%;
+    }
+    .jojoba{
+        right: 3%;
+    }
+}
+
+
+@media(max-width:650px){
+    .heading-section{
+        font-size: 2rem;
+    }
+    .skin-img{
+        margin: 0 15rem;
+    }
+    .img-type img{
+        width: 18rem;
+        height: 16rem;
+    }
+    .img-type{
+        width: 17rem;
+    }
+    .img-type:nth-child(2) {
+        margin-left: 30rem;
+        margin-top: -18rem;
+    }
+    .img-type:nth-child(3){
+        margin-top: -5rem;
+    }
+    .img-type:nth-child(3) p{
+        margin-left: 19rem;
+    }
+    .img-type:nth-child(1) p,
+    .img-type:nth-child(2) p{
+        margin-top: 0;
+        margin-left: 5rem;
+    }
+    .shade-types span{
+        margin: 1rem 1.5rem;
+    }
+    .shade-color-parameter div span{
+        font-size: 1.3rem;
+    }
+    .javitri{
+        right: 0;
+    }
+    .jojoba{
+        right: 0;
+    }
+}
+
+@media(max-width : 480px){
+    .title , .heading-section{
+        font-size:1.5rem;
+    }
+    .section-1-img img{
+        height: 70vh;
+    }
+    .skin-img{
+        margin: 0 5rem;
+    }
+    .img-type img{
+        width: 16rem;
+    }
+    .img-type:nth-child(3) {
+        margin-top: -6rem;
+    }
+    .shade-types span{
+        margin: 1rem 0rem;
+    }
+    .shade-color-parameter{
+        width: 82%;
+    }
+    .img-type:nth-child(2) {
+        margin-left: 25rem;
+        margin-top: -13rem;
+    }
+    .section-3-heading , .product-info{
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    figcaption{
+        padding: 0;
+    }
+    figcaption h2 , figcaption p {
+        margin: 0;
+    }
+}
+
+/* end of responsive design  */
